@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2D5Da"
+    android:padding="10dp"
+    tools:context="com.example.shubhamr.myfirstmapactivity.UserSens">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:splitMotionEvents="true">
+
+        <Button
+            android:id="@+id/navigate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorAccent"
+
+            android:elevation="40dp"
+            android:fontFamily="serif"
+            android:text="Navigate" />
+
+
+        <Button
+            android:id="@+id/picked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:elevation="0dp"
+            android:fontFamily="serif"
+            android:text="Patient Picked" />
+
+        <Button
+            android:id="@+id/dropped"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:fontFamily="serif"
+            android:freezesText="false"
+            android:password="false"
+            android:phoneNumber="false"
+            android:text="Patient Dropped" />
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+
+        android:layout_height="200dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="90dp"
+        android:elevation="50dp"
+        android:paddingTop="20dp"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:id="@+id/emergency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/age"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="text"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65dp"
+            android:text="text"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+
+            android:background="#000000"/>
+
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/age"
+            android:layout_below="@+id/userlondtext"
+            android:layout_marginTop="90dp"
+            android:text="text"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/userlondtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/username"
+            android:layout_below="@+id/userlattext"
+            android:layout_marginTop="115dp"
+            android:text="text"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/userlattext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/userlondtext"
+            android:layout_below="@+id/aadhaartext"
+            android:layout_marginTop="140dp"
+            android:text="text"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/aadhaartext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="165dp"
+            android:text="text"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/userinfotext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

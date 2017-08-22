@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/touch"
+    android:background="@drawable/background"
+    tools:context="com.example.shubhamr.myfirstmapactivity.MainControlActivity">
+
+    <Button
+        android:id="@+id/available"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:background="@drawable/roundedbutton"
+        android:text="Set Available" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Welcome"
+        android:textSize="40sp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/available"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/ambtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

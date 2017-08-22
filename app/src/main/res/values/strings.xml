@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ambulance</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="msg">Please enable all the permissions</string>
+</resources>
